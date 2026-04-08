@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://chonphat-24.github.io/survival-guide-2026/</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://chonphat-24.github.io/survival-guide-2026/oil-crisis.html</loc>
+    <loc>https://chonphat-24.github.io/survival-guide-2026/index1.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chonphat-24.github.io/survival-guide-2026/trump-policy.html</loc>
+    <loc>https://chonphat-24.github.io/survival-guide-2026/index2.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chonphat-24.github.io/survival-guide-2026/war-impact.html</loc>
+    <loc>https://chonphat-24.github.io/survival-guide-2026/index3.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chonphat-24.github.io/survival-guide-2026/survival-tips.html</loc>
+    <loc>https://chonphat-24.github.io/survival-guide-2026/index4.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chonphat-24.github.io/survival-guide-2026/about.html</loc>
+    <loc>https://chonphat-24.github.io/survival-guide-2026/indexab.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 </urlset>

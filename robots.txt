@@ -1,4 +1,6 @@
+# robots.txt for Survival Guide 2026
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://chonphat-24.github.io/survival-guide-2026/sitemap.xml
