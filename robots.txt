@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chonphat-24.github.io/survival-guide-2026/sitemap.xml
+Sitemap: https://chonphat-24.github.io/survival-guide-2026/sitemap-v2.xml
