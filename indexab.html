@@ -17,21 +17,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXG5PWQL11"></script>
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-JXG5PWQL11"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JXG5PWQL11');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXG5PWQL11');
   </script>
-  <!-- Schema JSON-LD (เพิ่มตรงนี้) -->
-    <script type="application/ld+json">
+
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "เกี่ยวกับ Survival Guide 2026",
-    "url": "https://chonphat-24.github.io/survival-guide-2026/indexab.html",
-    "description": "หน้าแนะนำเว็บไซต์ Survival Guide 2026 จัดทำขึ้นเพื่อวิเคราะห์วิกฤตเศรษฐกิจสำหรับคนไทย"
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Survival Guide 2026",
+      "description": "แหล่งข้อมูลและคู่มือรับมือวิกฤตเศรษฐกิจสำหรับคนไทย",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nakhon Pathom",
+        "addressCountry": "TH"
+      }
+    }
   }
   </script>
   <style>
@@ -63,21 +70,15 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top shadow">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="./">SURVIVAL GUIDE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="./">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="indexab.html">ABOUT</a>
-          </li>
+          <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="indexab.html">ABOUT</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="./#crisis-section" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Crisis type
-            </a>
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Crisis type</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="index1.html">Energy</a></li>
               <li><a class="dropdown-item" href="index2.html">Global Politics</a></li>
@@ -87,13 +88,12 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
-
   <!-- Hero -->
   <div class="container-fluid px-0">
     <div class="text-center py-4 shadow-sm" style="background-color: #f73333e5;">
@@ -127,37 +127,37 @@
 
         <!-- ส่วนที่ 3 — เนื้อหาในเว็บ -->
         <div class="p-4 rounded-4 bg-white shadow-sm border mb-4">
-          <h2 class="pasaa fw-bold mb-4">📚 เนื้อหาในเว็บมีอะไรบ้าง</h2>
+          <h2 class="pasaa fw-bold mb-4 text-center">📚 เนื้อหาในเว็บมีอะไรบ้าง</h2>
           <div class="row g-3">
             <div class="col-md-6">
-              <a href="index1.html" class="text-decoration-none">
-                <div class="p-3 rounded-3 border  h-100" style="background-color: #fff5f5;">
-                  <h5 class="pasaa fw-bold text-danger"> น้ำมันแพงเพราะอะไร</h5>
+              <a href="index1.html" class="text-decoration-none card-hover">
+                <div class="p-3 rounded-3 border h-100 shadow-sm" style="background-color: #fff5f5;">
+                  <h5 class="pasaa fw-bold text-danger">น้ำมันแพงเพราะอะไร</h5>
                   <p class="pasaa text-muted small mb-0">วิเคราะห์สาเหตุราคาพลังงานพุ่งสูงและวิธีประหยัดค่าน้ำมันในชีวิตประจำวัน</p>
                 </div>
               </a>
             </div>
             <div class="col-md-6">
-              <a href="index2.html" class="text-decoration-none">
-                <div class="p-3 rounded-3 border h-100" style="background-color: #f0f4ff;">
-                  <h5 class="pasaa fw-bold" style="color: #1a56db;">🇺🇸 นโยบายทรัมป์กระทบไทย</h5>
+              <a href="index2.html" class="text-decoration-none card-hover">
+                <div class="p-3 rounded-3 border h-100 shadow-sm" style="background-color: #f0f4ff;">
+                  <h5 class="pasaa fw-bold" style="color: #1a56db;">นโยบายทรัมป์กระทบไทย</h5>
                   <p class="pasaa text-muted small mb-0">อธิบายภาษีนำเข้าและผลกระทบต่อการส่งออกและการจ้างงานของไทย</p>
                 </div>
               </a>
             </div>
             <div class="col-md-6">
-              <a href="index3.html" class="text-decoration-none">
-                <div class="p-3 rounded-3 border h-100" style="background-color: #fff8f0;">
-                  <h5 class="pasaa fw-bold" style="color: #d97706;"> สงครามโลกกระทบเศรษฐกิจไทย</h5>
-                  <p class="pasaa text-muted small mb-0">โยงความขัดแย้งในตะวันออกกลางมาสู่ค่าครองชีพและชีวิตคนไทย</p>
+              <a href="index3.html" class="text-decoration-none card-hover">
+                <div class="p-3 rounded-3 border h-100 shadow-sm" style="background-color: #fff8f0;">
+                  <h5 class="pasaa fw-bold" style="color: #d97706;"> สงครามโลกกระทบไทย</h5>
+                  <p class="pasaa text-muted small mb-0">เชื่อมโยงความขัดแย้งในตะวันออกกลางมาสู่ค่าครองชีพและชีวิตคนไทย</p>
                 </div>
               </a>
             </div>
             <div class="col-md-6">
-              <a href="index4.html" class="text-decoration-none">
-                <div class="p-3 rounded-3 border h-100" style="background-color: #f0fff4;">
-                  <h5 class="pasaa fw-bold text-success"> วิธีรับมือวิกฤตการเงิน</h5>
-                  <p class="pasaa text-muted small mb-0">5 วิธีจัดการเงินที่ทำได้จริงในปี 2026 โดยไม่ต้องรอรัฐบาลช่วย</p>
+              <a href="index4.html" class="text-decoration-none card-hover">
+                <div class="p-3 rounded-3 border h-100 shadow-sm" style="background-color: #f0fff4;">
+                  <h5 class="pasaa fw-bold text-success">วิธีรับมือวิกฤตการเงิน</h5>
+                  <p class="pasaa text-muted small mb-0">5 วิธีจัดการเงินที่ทำได้จริงในปี 2026 เพื่อความมั่นคงทางการเงิน</p>
                 </div>
               </a>
             </div>
@@ -268,28 +268,17 @@
     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
       <h4 class="text-uppercase text-warning">Contact</h4>
       <ul class="list-unstyled">
-        <li><p class="small">Chayathip Street, Nakhonpathom, Thailand</p></li>
-        <li><p class="small">Email: sripheng_c@su.ac.th</p></li>
-        <li><p class="small">Phone: +080 216 6383</p></li>
+        <li><p class="small"><i class="fas fa-map-marker-alt me-2"></i>Chayathip Street, Nakhon Pathom, Thailand</p></li>
+        <li><p class="small"><i class="fas fa-envelope me-2"></i>Email: sripheng_c@su.ac.th</p></li>
+        <li><p class="small"><i class="fas fa-phone me-2"></i>Phone: +66 80 216 6383</p></li>
       </ul>
-    
-      <p>แชร์ข้อมูลนี้</p>
+  
+      <p class="mb-2">แชร์ข้อมูลนี้</p>
       <div class="d-flex flex-wrap">
-        <a href="https://www.facebook.com/" target="_blank" style="font-size: 30px; margin-right: 15px; color: #1877F2;">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        
-        <a href="https://x.com/" target="_blank" style="font-size: 30px; margin-right: 15px; color: #000000;">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        
-        <a href="https://www.line.me/th/" target="_blank" style="font-size: 30px; margin-right: 15px; color: #06C755;">
-          <i class="fa-brands fa-line"></i>
-        </a>
-      
-        <a href="https://www.instagram.com/" target="_blank" style="font-size: 30px; color: #E4405F;">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" style="font-size: 24px; margin-right: 15px; color: #1877F2;"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener" style="font-size: 24px; margin-right: 15px; color: #000000;"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.line.me/th/" target="_blank" rel="noopener" style="font-size: 24px; margin-right: 15px; color: #06C755;"><i class="fa-brands fa-line"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" style="font-size: 24px; color: #E4405F;"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
       </div>
@@ -300,6 +289,6 @@
   </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 </body>
 </html>
